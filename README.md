@@ -1,8 +1,8 @@
 # Materia de tecnologías web
 ## Solucion del problema
 
->[!Problema a resolver]
->
+>[!Note]
+>Problema a resolver
 >Dado 2 arrays:
 >nombre: ['Hugo','Paco','Luis','Pedro','Hector']:
 >edad: [35,50,40,18,30]
