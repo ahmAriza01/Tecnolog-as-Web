@@ -10,4 +10,4 @@
 >
 >Realizar el algoritmo utilizando funciones flecha que me indique el nombre y la edad mayor y menor.
 
-* [Codigo implementado para la solución](https://nodejs.org/es/)
+* [Codigo implementado para la solución](solucion.ts)
