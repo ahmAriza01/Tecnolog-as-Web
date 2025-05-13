@@ -1,7 +1,7 @@
 # Materia de tecnologías web
 📅 *Fecha: 13 de mayo de 2025*
 
-## Solucion del problema
+## Solución del problema
 
 >[!Note]
 >Problema a resolver
