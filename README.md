@@ -15,3 +15,9 @@
 >Realizar el algoritmo utilizando funciones flecha que me indique el nombre y la edad mayor y menor.
 
 * [Codigo implementado para la solución](solucion.ts)
+
+
+
+## Ejemplos
+📅 *Fecha: 16 de mayo de 2025*
+* [Ejemplos 3 y 4](https://github.com/ahmAriza01/Tecnolog-as-Web/blob/main/viernes16)
