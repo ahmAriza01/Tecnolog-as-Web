@@ -24,4 +24,4 @@
 
 ## Evaluación
 📅 *Fecha: 19 de mayo de 2025*
-* [APP.ts](https://github.com/ahmAriza01/Tecnolog-as-Web/blob/main/viernes16)
+* [APP.ts](https://github.com/ahmAriza01/Tecnolog-as-Web/blob/main/No_trabajar)
