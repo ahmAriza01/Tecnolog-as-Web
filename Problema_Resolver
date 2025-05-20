@@ -1,0 +1,100 @@
+Se te entrega un código con errores.
+Debes de resolver el error y confirmar que funcione.
+-------------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________________
+
+CODIGO 1 "con errores"
+(()=>{
+
+ const addTwoNumbers = (a, b) => {
+  return a + b;
+};
+
+ () => {
+  console.log(addTwoNumbers(2, 4)).toEqual(6);
+  console.log(addTwoNumbers(10, 10)).toEqual(20);
+};
+
+})()
+
+.............................................................................................................
+
+*CODIGO 1 CORREGIDO*
+
+
+(() => {
+
+
+//se añadimos tipo de datos number a los parametroa a b y el valor de retorno
+  const addTwoNumbers = (a: number, b: number): number => {
+    return a + b;
+  };
+
+//prueba de funcionamiento 
+  const test1 = addTwoNumbers(2, 4) === 6;
+  const test2 = addTwoNumbers(10, 10) === 20; // se cambio toEqueal por === lo que es correcto para ts
+
+  console.log("Prueba 1 passed:", test1);
+  console.log("Prueba 2 passed:", test2);
+
+})();
+
+_____________________________________________________________________________________________________________
+
+-------------------------------------------------------------------------------------------------------------
+
+CODIGO 2 "con errores"
+
+const addTwoNumbers = (params) => {
+  return params.first + params.second;
+};
+
+ () => {
+  console.log(
+    addTwoNumbers({
+      first: 2,
+      second: 4,
+    }),
+  ).toEqual(6);
+
+  console.log(
+    addTwoNumbers({
+      first: 10,
+      second: 20,
+    }),
+  ).toEqual(30);
+};
+
+.............................................................................................................
+
+*CODIGO 2 CORREGIDO*
+
+(() => {
+
+  // Se define el tipo del parámetro como un objeto con propiedades first y second de tipo number
+  const addTwoNumbers = (params: { first: number; second: number }): number => {
+    return params.first + params.second;
+  };
+
+  // Prueba manual con comparación usando === para comparación directa 
+  const test1 = addTwoNumbers({ first: 3, second: 3 }) === 6;
+  const test2 = addTwoNumbers({ first: 10, second: 20 }) === 30;
+
+  console.log("Prueba 1 passed:", test1);
+  console.log("Prueba 2 passed:", test2);
+})();
+
+-------------------------------------------------------------------------------------------------------------
+_____________________________________________________________________________________________________________
+
+#CODIGO DEL VIDEO
+
+
+
+
+_____________________________________________________________________________________________________________
+
+-------------------------------------------------------------------------------------------------------------
+
+
+
