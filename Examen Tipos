@@ -1,0 +1,85 @@
+Avance del examen 
+
+
+
+
+// Tipo para vehículos (batimovil y bumblebee)
+type Auto = {
+  carroceria: string;
+  modelo: string;
+  antibalas: boolean;
+  pasajeros: number;
+  disparar?: () => void; // método opcional
+};
+
+// Objetos
+const batimovil: Auto = {
+  carroceria: "Negra",
+  modelo: "6x6",
+  antibalas: true,
+  pasajeros: 4
+};
+
+const bumblebee: Auto = {
+  carroceria: "Amarillo con negro",
+  modelo: "4x2",
+  antibalas: true,
+  pasajeros: 4,
+  disparar() {
+    console.log("Disparando");
+  }
+};
+
+// Tipo para villanos
+type Villano = {
+  nombre: string;
+  edad: number | undefined;
+  mutante: boolean;
+};
+
+// Villanos debe de ser un arreglo de objetos personalizados
+const villanos: Villano[] = [
+  {
+    nombre: "Lex Luthor",
+    edad: 54,
+    mutante: false
+  },
+  {
+    nombre: "Erik Magnus Lehnsherr",
+    edad: 49,
+    mutante: true
+  },
+  {
+    nombre: "James Logan",
+    edad: undefined,
+    mutante: true
+  }
+];
+
+// Tipos para charles y apocalipsis
+type Charles = {
+  poder: string;
+  estatura: number;
+};
+
+type Apocalipsis = {
+  lider: boolean;
+  miembros: string[];
+};
+
+// Múltiples tipos
+const charles: Charles = {
+  poder: "psiquico",
+  estatura: 1.78
+};
+
+const apocalipsis: Apocalipsis = {
+  lider: true,
+  miembros: ["Magneto", "Tormenta", "Psylocke", "Angel"]
+};
+
+// Mystique puede ser de tipo Charles o Apocalipsis
+let mystique: Charles | Apocalipsis;
+
+mystique = charles;
+mystique = apocalipsis;
