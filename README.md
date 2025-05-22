@@ -28,4 +28,8 @@
 
 ## Problema a resolver
 📅 *Fecha: 20 de mayo de 2025*
-* [Problma.ts](https://github.com/ahmAriza01/Tecnolog-as-Web/blob/main/Problema_Resolver)
+* [Problema.ts](https://github.com/ahmAriza01/Tecnolog-as-Web/blob/main/Problema_Resolver)
+
+## Crear Clases 
+📅 *Fecha: 22 de mayo de 2025*
+* [Clases.ts](https://github.com/ahmAriza01/Tecnolog-as-Web/blob/main/Clases)
