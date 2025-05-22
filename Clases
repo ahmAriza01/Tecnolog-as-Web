@@ -1,0 +1,141 @@
+
+(() => {
+    console.log("Clase´s de Hotel");
+//------------------------------------------------------------------------------------------------------
+    // Clase Manager
+    class Manager {
+        name: string;
+        id: number;
+        phoneNo: number;
+        location: string;
+
+        constructor(name: string, id: number, phoneNo: number, location: string) {
+            this.name = name;
+            this.id = id;
+            this.phoneNo = phoneNo;
+            this.location = location;
+        }
+
+        purchaseInventory() {}
+        recordComplaints() {}
+        manageStaff() {}
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase Inventory
+    class Inventory {
+        type: string;
+        status: string;
+
+        constructor(type: string, status: string) {
+            this.type = type;
+            this.status = status;
+        }
+    }
+//-----------------------------------------------------------------------------------------------------
+    // Clase de Guest
+    class Guest {
+        name: string;
+        id: number;
+        phoneNo: number;
+        address: string;
+        roomNo: number;
+
+        constructor(name: string, id: number, phoneNo: number, address: string, roomNo: number) {
+            this.name = name;
+            this.id = id;
+            this.phoneNo = phoneNo;
+            this.address = address;
+            this.roomNo = roomNo;
+        }
+
+        checkIn() {}
+        checkOut() {}
+        payBill() {}
+        orderFood() {}
+        submitFeedback() {}
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase Receptionist
+    class Receptionist {
+        name: string;
+        id: number;
+        phoneNo: number;
+        location: string;
+
+        constructor(name: string, id: number, phoneNo: number, location: string) {
+            this.name = name;
+            this.id = id;
+            this.phoneNo = phoneNo;
+            this.location = location;
+        }
+
+        checkRoomAvailability() {}
+        bookRoom() {}
+        generateBill() {}
+        acceptCustomerFeedback() {}
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase Rooms
+    class Rooms {
+        roomNo: number;
+        location: string;
+
+        constructor(roomNo: number, location: string) {
+            this.roomNo = roomNo;
+            this.location = location;
+        }
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase Bill
+    class Bill {
+        billNo: number;
+        guestName: string;
+
+        constructor(billNo: number, guestName: string) {
+            this.billNo = billNo;
+            this.guestName = guestName;
+        }
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase Chef
+    class Chef {
+        name: string;
+        id: number;
+        location: string;
+
+        constructor(name: string, id: number, location: string) {
+            this.name = name;
+            this.id = id;
+            this.location = location;
+        }
+
+        takeOrders() {}
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase FoodItems
+    class FoodItems {
+        id: number;
+        name: string;
+
+        constructor(id: number, name: string) {
+            this.id = id;
+            this.name = name;
+        }
+    }
+//------------------------------------------------------------------------------------------------------
+    // Clase Housekeeping
+    class Housekeeping {
+        name: string;
+        id: number;
+        location: string;
+
+        constructor(name: string, id: number, location: string) {
+            this.name = name;
+            this.id = id;
+            this.location = location;
+        }
+
+        cleanRoom() {}
+    }
+
+})();
