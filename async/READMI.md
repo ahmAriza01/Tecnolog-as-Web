@@ -1,7 +1,4 @@
 # 🌮 Ejemplo de Promises, Async y Await explicado con tortillas
-
-Este ejemplo en TypeScript explica cómo funcionan las promesas (`Promise`), funciones asíncronas (`async`) y el operador `await`, usando una analogía sencilla: **ir por tortillas**.
-
 ---
 
 ## 🧠 ¿Qué es una Promise?
