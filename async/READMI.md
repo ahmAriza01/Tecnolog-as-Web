@@ -1,5 +1,4 @@
 # 🌮 Ejemplo de Promises, Async y Await explicado con tortillas
----
 
 ## 🧠 ¿Qué es una Promise?
 
