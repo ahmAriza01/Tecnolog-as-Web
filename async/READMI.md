@@ -28,3 +28,19 @@ function pedirTortillas(): Promise<string> {
     });
 }
 
+
+```ts
+async function irPorTortillas() {
+    console.log("Vas a la tortillería...");
+    
+    try {
+        const respuesta = await pedirTortillas();
+        console.log("Tortillero:", respuesta);
+    } catch (error) {
+        console.error("Tortillero:", error);
+    }
+
+    console.log("Regresas a casa.");
+}
+
+irPorTortillas();
