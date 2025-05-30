@@ -29,7 +29,6 @@ function pedirTortillas(): Promise<string> {
 }
 
 
-```ts
 async function irPorTortillas() {
     console.log("Vas a la tortillería...");
     
