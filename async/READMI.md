@@ -56,16 +56,22 @@ irPorTortillasAsync()
   });
 
 ```
+#Conceptos 
 
-### Promise  "algo que puede tardar, como ir por tortillas"
+## Promise 
+- "algo que puede tardar, como ir por tortillas"
 
-### resolve() "Todo salio bien, "¡tenemos las tortillas!"
+## resolve() 
+- "Todo salio bien, "¡tenemos las tortillas!"
 
-### reject() Algo salio mal, no hay masa
+## reject() 
+- Algo salio mal, no hay masa
 
-### asinc Declara una función que puede esperar (await)
+## asinc 
+- Declara una función que puede esperar (await)
 
-### await Espera a que la promesa termine para seguir
+## await 
+- Espera a que la promesa termine para seguir
 
 
 
