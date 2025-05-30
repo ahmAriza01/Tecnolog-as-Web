@@ -1,45 +1,52 @@
-#  Ejemplo de Promises, Async y Await explicado con tortillas
+# 🌮 Ejemplo de Promesa y Async/Await: ¡Ir por Tortillas!
 
-##  ¿Qué es una Promise?
+// Tortillas/promesaTortillas.ts
 
-Una `Promise` (promesa) representa una operación que aún no ha terminado, pero lo hará en el futuro. Tiene tres estados:
-
-- `pending` (pendiente): en proceso.
-- `resolved` (resuelta): todo salió bien.
-- `rejected` (rechazada): algo falló.
-
----
-
-##  Ejemplo con tortillas
-
-### Paso 1: La función que simula pedir tortillas
-
-```ts
-function pedirTortillas(): Promise<string> {
+// Función que devuelve una promesa
+export function pedirTortillas(): Promise<string> {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const hayMasa = true;
+            const hayMasa = true; // Cambiar a false para probar el error
             if (hayMasa) {
                 resolve("Aquí están tus tortillas 🌮");
             } else {
                 reject("¡No hay masa! 😢");
             }
-        }, 3000); // Espera de 3 segundos
+        }, 2000);
     });
 }
 
-
-async function irPorTortillas() {
-    console.log("Vas a la tortillería...");
-    
+// Función async que espera la promesa
+export async function irPorTortillasAsync(): Promise<string> {
     try {
-        const respuesta = await pedirTortillas();
-        console.log("Tortillero:", respuesta);
+        const resultado = await pedirTortillas();
+        return resultado;
     } catch (error) {
-        console.error("Tortillero:", error);
+        throw new Error(`Error al pedir tortillas: ${error}`);
     }
-
-    console.log("Regresas a casa.");
 }
 
-irPorTortillas();
+
+
+
+// index.ts
+
+import { pedirTortillas, irPorTortillasAsync } from "./Tortillas/promesaTortillas";
+
+// Versión con .then() y .catch()
+pedirTortillas()
+  .then((respuesta) => {
+    console.log("Versión Promise .then:", respuesta);
+  })
+  .catch((error) => {
+    console.error("Versión Promise .catch:", error);
+  });
+
+// Versión con async/await
+irPorTortillasAsync()
+  .then((respuesta) => {
+    console.log("Versión Async/Await:", respuesta);
+  })
+  .catch((error) => {
+    console.error("Versión Async/Await:", error);
+  });
