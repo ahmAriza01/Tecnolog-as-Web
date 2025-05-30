@@ -1,7 +1,7 @@
 # 🌮 Ejemplo de Promesa y Async/Await: ¡Ir por Tortillas!
 
 
-## 🧾 Código del módulo: `promesaTortillas.ts`
+## Código
 
 ```ts
 // Tortillas/promesaTortillas.ts
