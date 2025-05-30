@@ -5,53 +5,65 @@
 
 ```ts
 
-// Función que devuelve una promesa
-export function pedirTortillas(): Promise<string> {
+// Tortillas/promesaTortillasThen.ts
+export function pedirTortillasThen(): Promise<string> {
   return new Promise((resolve, reject) => {
     
-      const hayMasa = true; // Cambiar a false para probar el error
+      const hayMasa = true; // ← controla si hay masa SOLO para esta versión
       if (hayMasa) {
-        resolve("Aquí están tus tortillas 🌮");
+        resolve("Tortillas listas con .then 🌮");
       } else {
-        reject("¡No hay masa! 😢");
+        reject("No hay masa (versión .then) 😢");
       }
+  
   });
 }
 
-// Función async que espera la promesa
-export async function irPorTortillasAsync(): Promise<string> {
-  try {
-    const resultado = await pedirTortillas();
-    return resultado;
-  } catch (error) {
-    throw new Error(`Error al pedir tortillas: ${error}`);
-  }
+// Tortillas/promesaTortillasAsync.ts
+
+function pedirTortillasAsync(): Promise<string> {
+  return new Promise((resolve, reject) => {
+    
+      const hayMasa = true; // ← controla si hay masa SOLO para esta versión
+      if (hayMasa) {
+        resolve("Tortillas listas con async/await 🌮");
+      } else {
+        reject("No hay masa (versión async/await) 😢");
+      }
+    
+  });
 }
 
+export async function irPorTortillasAsync(): Promise<string> {
+  try {
+    const resultado = await pedirTortillasAsync();
+    return resultado;
+  } catch (error) {
+    throw new Error(`Error al pedir tortillas (async/await): ${error}`);
+  }
+}
 ```
 
 ```ts
 
-// index.ts
-
-import { pedirTortillas, irPorTortillasAsync } from "./Tortillas/promesaTortillas";
-
-// Versión con .then() y .catch()
-pedirTortillas()
+// indexThen.ts
+pedirTortillasThen()
   .then((respuesta) => {
-    console.log("Versión Promise .then:", respuesta);
+    console.log("Versión .then:", respuesta);
   })
   .catch((error) => {
-    console.error("Versión Promise .catch:", error);
+    console.error("Versión .then:", error);
   });
 
-// Versión con async/await
+
+// indexAsync.ts
+
 irPorTortillasAsync()
   .then((respuesta) => {
-    console.log("Versión Async/Await:", respuesta);
+    console.log("Versión async/await:", respuesta);
   })
   .catch((error) => {
-    console.error("Versión Async/Await:", error);
+    console.error("Versión async/await:", error);
   });
 
 ```
