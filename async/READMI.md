@@ -29,3 +29,29 @@ export async function irPorTortillasAsync(): Promise<string> {
     throw new Error(`Error al pedir tortillas: ${error}`);
   }
 }
+
+```
+
+```ts
+
+// index.ts
+
+import { pedirTortillas, irPorTortillasAsync } from "./Tortillas/promesaTortillas";
+
+// Versión con .then() y .catch()
+pedirTortillas()
+  .then((respuesta) => {
+    console.log("Versión Promise .then:", respuesta);
+  })
+  .catch((error) => {
+    console.error("Versión Promise .catch:", error);
+  });
+
+// Versión con async/await
+irPorTortillasAsync()
+  .then((respuesta) => {
+    console.log("Versión Async/Await:", respuesta);
+  })
+  .catch((error) => {
+    console.error("Versión Async/Await:", error);
+  });
