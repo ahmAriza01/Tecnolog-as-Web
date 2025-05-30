@@ -1,6 +1,6 @@
-# 🌮 Ejemplo de Promises, Async y Await explicado con tortillas
+#  Ejemplo de Promises, Async y Await explicado con tortillas
 
-## 🧠 ¿Qué es una Promise?
+##  ¿Qué es una Promise?
 
 Una `Promise` (promesa) representa una operación que aún no ha terminado, pero lo hará en el futuro. Tiene tres estados:
 
@@ -10,9 +10,9 @@ Una `Promise` (promesa) representa una operación que aún no ha terminado, pero
 
 ---
 
-## 🍽️ Ejemplo con tortillas
+##  Ejemplo con tortillas
 
-### 🧾 Paso 1: La función que simula pedir tortillas
+### Paso 1: La función que simula pedir tortillas
 
 ```ts
 function pedirTortillas(): Promise<string> {
