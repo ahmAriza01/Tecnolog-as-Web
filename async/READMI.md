@@ -9,14 +9,13 @@
 // Función que devuelve una promesa
 export function pedirTortillas(): Promise<string> {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
+    
       const hayMasa = true; // Cambiar a false para probar el error
       if (hayMasa) {
         resolve("Aquí están tus tortillas 🌮");
       } else {
         reject("¡No hay masa! 😢");
       }
-    }, 2000);
   });
 }
 
