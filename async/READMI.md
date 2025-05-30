@@ -4,7 +4,6 @@
 ## Código
 
 ```ts
-// Tortillas/promesaTortillas.ts
 
 // Función que devuelve una promesa
 export function pedirTortillas(): Promise<string> {
