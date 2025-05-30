@@ -65,5 +65,7 @@ irPorTortillasAsync()
 
 ### asinc Declara una función que puede esperar (await)
 
+### await Espera a que la promesa termine para seguir
+
 
 
